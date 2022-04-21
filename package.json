@@ -2,7 +2,7 @@
   "name": "imp-core-backend",
   "version": "0.0.1",
   "description": "简单的权限管理系统",
-  "author": "lanseria <zhangchao564265135@hotmail.com>",
+  "author": "lanseria <bmc@ivhik.cn>",
   "private": true,
   "license": "MIT",
   "packageManager": "pnpm@7.0.0-rc.7",
