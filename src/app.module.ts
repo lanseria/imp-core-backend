@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { DatabaseModule } from './database/database.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { configConfiguration } from './config';
@@ -11,6 +12,7 @@ import { configConfiguration } from './config';
       isGlobal: true,
       load: [configConfiguration],
     }),
+    DatabaseModule,
   ],
   controllers: [AppController],
   providers: [AppService],
