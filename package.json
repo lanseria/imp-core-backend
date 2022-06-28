@@ -8,6 +8,7 @@
   "packageManager": "pnpm@7.3.0",
   "scripts": {
     "init:prj": "zx scripts/init.mjs",
+    "dev": "nest start --watch",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

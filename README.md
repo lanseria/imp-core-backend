@@ -29,3 +29,25 @@ docker run --name pgadmin1 -d -p 5433:80 -e PGADMIN_DEFAULT_EMAIL=root@root.com 
 ### 数据库新建
 
 由于需要连接固定数据库名称，此处命名为 `impcore`，所以需要创建一个名为这个的数据库
+
+## 继续开发此项目
+
+
+- 生成模块
+
+```bash
+$ nest g mo modules/admin/transfy-ai/transfy
+```
+
+- 生成控制器
+
+```bash
+$ nest g co modules/admin/transfy-ai/transfy
+```
+
+- 生成服务器
+
+```bash
+$ nest g s modules/admin/transfy-ai/transfy
+```
+
