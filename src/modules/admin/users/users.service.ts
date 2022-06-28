@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { UserRepository } from './user.repository';
+import { Repository } from 'typeorm';
+import { UserEntity } from './user.entity';
 /**
  * 1. 验证用户名是否重复
  * 2. 用户创建（用户名/密码/头像？）
@@ -14,8 +15,8 @@ import { UserRepository } from './user.repository';
 @Injectable()
 export class UsersService {
   constructor(
-    @InjectRepository(UserRepository)
-    private userRepository: UserRepository,
+    @InjectRepository(UserEntity)
+    private userRepository: Repository<UserEntity>,
   ) {}
 
   public async findUserByUsername(username: string) {
